@@ -1,0 +1,4 @@
+{
+	"apiAddress": "http://localhost:3000/",
+	"websocketServerAddress": "http://localhost:5000/"
+}

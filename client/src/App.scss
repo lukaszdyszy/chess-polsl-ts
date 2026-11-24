@@ -1,0 +1,29 @@
+.App {
+	display: flex;
+	min-height: 100vh;
+	background: #f4f0ea;
+	color: #2c261f;
+}
+
+.main-menu {
+	width: 260px;
+	flex-shrink: 0;
+	background: #3d3428;
+	padding: 0;
+}
+
+.main-content {
+	flex: 1;
+	min-width: 0;
+	padding: 16px;
+}
+
+.App-button {
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+
+	&:focus {
+		outline: none;
+	}
+}

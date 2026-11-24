@@ -1,0 +1,15 @@
+.Chessboard {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	display: grid;
+	grid-template: repeat(8, 1fr)/repeat(8, 1fr);
+}
+
+.Chessboard-field {
+	background-size: calc(100% * 6) calc(100%*2);
+
+	&.active {
+		background-color: gold;
+	}
+}

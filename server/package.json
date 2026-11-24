@@ -1,0 +1,50 @@
+{
+  "name": "chess-polsl-server",
+  "version": "0.0.1",
+  "description": "server",
+  "license": "ISC",
+  "author": "lukaszdyszy",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon",
+    "migrate:up": "node-pg-migrate up",
+    "migrate:up_dev": "node-pg-migrate up -m ./migrations/dev -t pgmigrations_dev",
+    "migrate:down": "node-pg-migrate down",
+    "migrate:down_dev": "node-pg-migrate down -m ./migrations/dev -t pgmigrations_dev",
+    "migrate:create": "node-pg-migrate create -f migrate.json --migration-filename-format=utc",
+    "migrate:create_dev": "node-pg-migrate create -m ./migrations/dev -j sql --migration-filename-format=utc"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^26.6.2",
+    "@types/pg": "^8.23.1",
+    "@types/ws": "^8.18.1",
+    "node-pg-migrate": "^9.0.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "chess-logic": "file:../chess-logic",
+    "cookie": "^2.0.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "pg": "^8.23.0",
+    "uuid": "^14.0.3",
+    "ws": "^8.21.3",
+    "zod": "^4.6.5"
+  }
+}

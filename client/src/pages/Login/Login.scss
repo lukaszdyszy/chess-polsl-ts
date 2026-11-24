@@ -1,0 +1,27 @@
+.Login-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.login-form-input {
+	font-size: 1.15rem;
+	padding: 5px;
+	min-width: 300px;
+}
+
+.login-error-message {
+	color: red;
+	padding: 3px;
+}

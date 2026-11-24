@@ -1,0 +1,79 @@
+.MainMenu {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	padding: 22px 14px 16px;
+	color: #f6f1e8;
+}
+
+.MainMenu-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 4px 12px 22px;
+}
+
+.MainMenu-brand-mark {
+	font-size: 26px;
+	line-height: 1;
+}
+
+.MainMenu-brand-name {
+	font-family: Georgia, "Palatino Linotype", Palatino, serif;
+	font-size: 20px;
+	letter-spacing: 0.03em;
+}
+
+.MainMenu-links {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.MainMenu-link {
+	display: block;
+	padding: 12px 14px;
+	border-radius: 8px;
+	color: #f6f1e8;
+	font-size: 15px;
+	text-decoration: none;
+
+	&:hover {
+		background: rgba(246, 241, 232, 0.1);
+	}
+
+	&.active {
+		background: #efe2c4;
+		color: #2c261f;
+		font-weight: 600;
+	}
+}
+
+.MainMenu-user {
+	margin-top: auto;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 8px;
+	padding: 8px 5px 0 5px;
+	border-top: 1px solid rgba(246, 241, 232, 0.16);
+}
+
+.MainMenu-user-name {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.MainMenu-user-signout {
+	font-size: 13px;
+	color: #efe2c4;
+	font-variant-numeric: tabular-nums;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 8px;
+
+	&:hover {
+		cursor: pointer;
+		background: rgba(246, 241, 232, 0.1);
+	}
+}

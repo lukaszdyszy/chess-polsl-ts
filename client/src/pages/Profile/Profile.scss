@@ -1,0 +1,106 @@
+.Profile {
+	max-width: 720px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.Profile-card {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	padding: 22px;
+	border: 1px solid #d7cfc2;
+	border-radius: 10px;
+	background: #fbf8f3;
+	box-shadow: 0 1px 2px rgba(61, 52, 40, 0.08);
+}
+
+.Profile-avatar {
+	width: 72px;
+	height: 72px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #3d3428;
+	color: #f6f1e8;
+	font-family: Georgia, "Palatino Linotype", Palatino, serif;
+	font-size: 32px;
+}
+
+.Profile-identity {
+	flex: 1;
+	min-width: 0;
+}
+
+.Profile-username {
+	margin: 0;
+	font-family: Georgia, "Palatino Linotype", Palatino, serif;
+	font-size: 28px;
+	font-weight: 600;
+	color: #2c261f;
+}
+
+.Profile-email {
+	margin: 4px 0 0;
+	font-size: 14px;
+	color: #8a7d6b;
+}
+
+.Profile-elo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 8px 14px;
+	border-radius: 8px;
+	background: #efe2c4;
+}
+
+.Profile-elo-value {
+	font-size: 26px;
+	font-weight: 700;
+	color: #2c261f;
+	font-variant-numeric: tabular-nums;
+	line-height: 1;
+}
+
+.Profile-elo-label {
+	margin-top: 4px;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #8a7d6b;
+}
+
+.Profile-details {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+}
+
+.Profile-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 16px;
+	border: 1px solid #d7cfc2;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.Profile-detail-label {
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #8a7d6b;
+}
+
+.Profile-detail-value {
+	font-size: 16px;
+	color: #2c261f;
+	word-break: break-word;
+}
